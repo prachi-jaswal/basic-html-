@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin-top: 20px;
+        }
+        div{
+            height:200px;
+            width: 200px;
+            background-image: linear-gradient(to top,red,white,blue); 
+        /*   background-image: linear-gradient(190deg,red,white,blue);*/
+        }
+        .one{
+             height:200px;
+            width: 200px;
+         background-image: radial-gradient(ellipse at  center,red,white,purple,blue,green); 
+      /* background-image: radial-gradient(ellipse at 30 40%,
+       red,white,blue,yellow,green); */
+       
+       background-image: repeating-radial-gradient(red,green,yellow 50%);
+        }
+ 
+         .two{
+             height:200px;
+            width: 200px;
+       background-image: conic-gradient(from 200deg at 10% 30%,red,green,purple,blue); 
+       background-image: repeating-conic-gradient(red,green,purple,blue 20%);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class="one"></div>
+    <div class="two"></div>
+</body>
+</html>
