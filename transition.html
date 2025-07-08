@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 10px;
+            background-image: linear-gradient(pink,white,rgb(231, 231, 153));
+        }
+         .box1{
+            height: 200px;
+            width: 200px;
+           border-radius: 20px;
+           text-align: center;
+        }
+        .box1:hover{
+             background-image: linear-gradient(rgb(190, 94, 110), white , rgb(48, 129, 156)); 
+             transform: translateX(200px);
+             transition: 2s;
+        }
+
+        .box2{
+            height: 200px;
+            width: 200px;
+             border-radius: 20px;
+            text-align: center;
+            color: purple;
+        }
+
+        .box2:hover{
+            background-image: radial-gradient(black,white,blue);
+            transform: rotate(450deg);
+            transition: 2s;
+        }
+
+        .box3{
+           height: 200px;
+            width: 200px;
+             border-radius: 20px;
+             text-align: center;
+        }
+
+        .box3:hover{
+            background-image: linear-gradient(rgb(206, 14, 46),white,yellow);
+            transform: rotateX(360deg);
+            transition: 10s;
+        }
+
+        .box4{
+             height: 200px;
+            width: 200px;
+             border-radius: 20px;
+             text-align: center;
+        }
+
+        .box4:hover{
+            background-image: radial-gradient(rgb(238, 112, 133), white, purple);
+            transform: rotateY(390deg);
+            transition: 10s;
+        }
+
+        .box5{
+             height: 200px;
+            width: 200px;
+             border-radius: 20px;
+             text-align: center;
+        }
+
+        .box5:hover{
+            background-image: conic-gradient(lightblue,red,orange);
+            transform: scale(1.9);
+            transition: 1s;
+        }
+        
+        .box6{
+            height: 200px;
+            width: 200px;
+             border-radius: 20px;
+             text-align: center;
+        }
+
+        .box6:hover{
+            background-image: linear-gradient(yellow,pink,orange);
+            transform: scaleX(1.5);
+            transition: 2s;
+        }
+
+        .box8{
+         height: 200px;
+        width: 200px;
+         border-radius: 20px;
+         text-align: center;
+        }
+
+        .box8:hover{
+            background-image: linear-gradient(pink , white, yellow);
+            transform: skew(660deg);
+            transition:2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">TranslateX</div>
+    <div class="box2">rotate</div>
+    <div class="box3">rotateX</div>
+    <div class="box4">rotateY</div>
+    <div class="box5">scale</div>
+    <div class="box6">scaleX</div>
+    <div class="box8">skew</div>
+</body>
+</html>
