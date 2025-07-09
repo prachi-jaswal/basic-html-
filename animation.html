@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+       
+       body{
+        background-color: rgb(30, 25, 25);
+       }
+        .FadeIn{
+             display: inline-block;
+            margin: 200px 600px;
+            opacity: 0;
+            animation: FadeIn 2s infinite running;
+        }
+
+        @keyframes FadeIn {
+            to{
+            opacity: 1;
+            transform: translateX(120px);
+            font-size: x-large;
+            background-image: linear-gradient(360deg,pink,rgb(213, 206, 206),yellow);
+        }
+    }
+
+    .Bounce{
+        display: inline-block;
+        padding: 10px 20px; 
+        border: 2px dashed ;
+          background-color: #f092e5;
+         color: black;
+         border-radius: 5px;
+         animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce {
+        0% {
+       transform: translateY(0);
+      }
+
+       50% {
+    transform: translateY(40px);
+      }
+      100% {
+    transform: translateY(0);
+    background-image: radial-gradient(rgb(88, 243, 225),pink);
+     }
+    }
+
+    .Bounce1{
+         display: inline-block;
+        padding: 10px 20px; 
+        border: 2px dashed ;
+          background-color: #8fe8ed;
+         color: black;
+         border-radius: 5px;
+         animation: bounce1 5s infinite;
+    }
+
+    @keyframes bounce1{
+        0%{
+        transform: translateY(0);
+        }
+
+        50%{
+            transform: translateY(40px);
+        }
+
+        100%{
+            transform: translateY(0);
+            background-image: radial-gradient(pink, white);
+        }
+        
+    }
+    </style>
+
+</head>
+<body>
+    <div class="FadeIn">Hello, I will fade in!</div>
+    <div class="Bounce">Bounce Me!</div>
+    <div class="Bounce1">Bounce Me!</div>
+</body>
+</html>
