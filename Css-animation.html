@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animations</title>
+    <style>
+        *{
+            box-sizing: content-box;
+        }
+        body{
+            background-color: black;
+            display: block;
+            position: relative;
+            left: 500px;
+            overflow: hidden;
+        }
+        div {
+            height: 100px;
+            width: 100px;
+            border: 2px solid white;
+            border-radius: 20px;
+            text-align: center;
+            place-content: center;
+            margin-top: 50px;
+        }
+
+        .bounce{
+            background-color: rgb(204, 160, 245);
+            animation: bounce 1s infinite running;
+        }
+
+        @keyframes bounce {
+            0%{
+                transform: translateY(0);
+            }
+
+            20%{
+                transform: translateY(20px);
+            }
+
+            100%{
+                transform: translateY(0);
+                background-image: linear-gradient(rgb(0, 255, 255),rgb(247, 173, 254));
+            }
+        }
+
+        .fadein{
+            background-color: rgb(204, 160, 245);
+            animation: FadeIn 1s infinite running;
+            opacity: 0;
+        }
+
+        @keyframes FadeIn{
+            to{
+                opacity: 1;
+               transform: translatex(50px);
+                background-image: linear-gradient(pink, blue);
+            }
+        }
+
+        .flip{
+          background-color: rgb(204, 160, 245);
+            animation: flip 1s infinite running;
+        }
+
+        @keyframes flip{
+            to{
+                transform: rotateY(120deg);
+                background-image: linear-gradient(blue,pink);
+            }
+        }
+
+        .zoomin{
+            background-color: rgb(253, 231, 146);
+            animation: ZoomIn 1s infinite running;
+        }
+
+        @keyframes ZoomIn{
+            to{
+                background-image: linear-gradient(rgb(0, 242, 255),pink);
+                font-size: 25px;
+
+            }
+        }
+       
+        @media  screen and (min-width: 460px) OR (max-width:780px){
+            div{
+                width: 200px;
+                height: 200px;
+                margin: 100px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="bounce"> Bounce</div>
+    <div class="fadein">FadeIn</div>
+    <div class="flip">Flip</div>
+    <div class="zoomin">ZoomIn</div>
+</body>
+</html>
